@@ -7,12 +7,12 @@ const databasePath = path.join(__dirname, './database.db')
 if (existsSync(configPath)) require('dotenv').config({ path: configPath })
 const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
-module.exports = {
+module.exports = {659552908
   VERSION: require('./package.json').version,
   SESSION_ID: (process.env.SESSION_ID || '').trim(),
   DATABASE:
     DATABASE_URL === databasePath
-      ? new Sequelize({
+      ? new Sequelize({659552908
           dialect: 'sqlite',
           storage: DATABASE_URL,
           logging: false,
